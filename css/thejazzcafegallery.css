@@ -1,0 +1,86 @@
+/*  G A L L E R Y  */
+	/*  Lightbox Starts Here  */
+	.jazzLightbox
+		{
+		background: rgba(0, 0, 0, 0.8);
+		display: none;
+		position: fixed;
+		height: 100%;
+		top: 0;
+		width: 100%;
+		z-index: 9999;
+		}
+
+	.jazzLightbox .image-in-lightbox
+		{
+		max-width: 700px;
+		max-height: 700px;
+		left: 50%;
+		position: absolute;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		width: 100%;
+		z-index: 999;
+		}
+
+	.jazzLightboxImages ul
+		{
+		padding: 0;
+		margin: 0;
+		line-height: 0;
+		}
+
+	.jazzLightboxImages ul li
+		{
+		transition: all 600ms;
+		float: left;
+		display: block;
+		position: relative;
+		width: 25%;
+		}
+
+	.jazzLightboxImages ul li a img
+		{
+		width: 100%;
+		height: auto;
+		}
+
+	.closeButton, .nextButton, .prevButton
+		{
+		transition: all 600ms;
+		color: #fdb813;
+		font-size: 24px;
+		font-family: 'Lobster', sans-serif;
+		text-decoration: none;
+		position: absolute;
+		z-index: 9999;
+		}
+
+	.closeButton
+		{
+		position: absolute;
+		right: 20px;
+		top: 20px;
+		}
+
+	.nextButton, .prevButton
+		{
+		color: ##fdb813;
+		top: 50%;
+		}
+
+	.nextButton
+		{
+		right: 20px;
+		}
+
+	.prevButton
+		{
+		left: 20px;
+		}
+
+	.closeButton:hover, .nextButton:hover, .prevButton:hover
+		{
+		color: #ffffff;
+		}
+	/*  Lightbox Starts Here  */

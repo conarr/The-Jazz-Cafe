@@ -1,0 +1,1588 @@
+/*  Jazz Blue = #005c8d / Warm Yellow = #fdb813  */
+
+
+/*  G E N E R I C  */
+	html
+		{
+		font-size: 100%;
+		box-sizing: border-box;
+		text-decoration: none;
+		}
+
+	*, *:before, *:after
+		{
+		box-sizing: inherit;
+		}
+
+	body
+		{
+		font-family: 'Open Sans', sans-serif;
+		font-size: 14pt;
+		line-height: 15pt;
+		margin: 0 auto 0 auto;
+		text-decoration: none;
+		}
+
+	.cf:before, .cf:after
+		{
+	    content: " ";
+	    display: table;
+		}
+
+	.cf:after
+		{
+	    clear: both;
+		}
+
+
+	/*  Generic Page Header Navigation Starts Here  */
+		header
+			{
+		    max-width: 1100px;
+		    margin: 0 auto 0 auto;
+		    padding: 15px;
+			}
+
+		#headerNavigationLeft
+			{
+			display: inline-block;
+			float: left;
+			margin-top: 10px;
+			}
+
+		#headerNavigationLeft p span
+			{
+			font-size: 1.3em;
+			}
+
+		#headerNavigationLeft p
+			{
+			font-size: 0.8em;
+			text-transform: uppercase;
+			color: #fdb813;
+			}
+
+		#headerNavigationLeft a
+			{
+			color: #005c8d;
+			font-weight: 700;
+			text-decoration: none;
+			}
+
+		.navigationTel
+			{
+			font-size: 1.0em;
+			color: #005c8d;
+			}
+
+		.headerNavigationRight:after
+			{
+			display: inline;
+			content: " ";
+			clear: both;
+			}
+
+		.headerNavigationRightList
+			{
+			display: inline;
+			list-style: none;
+			float: right;
+			}
+
+		.headerNavigationRightList li
+			{
+			float: left;
+			padding-left: 6px;
+			}
+
+		.headerNavigationRightList a
+			{
+			color: #005c8d;
+			text-decoration: none;
+			font-size: 0.6em;
+			}
+
+		#shoppingCart
+			{
+			display: inline;
+			width: 26px;
+			height: 26px;
+			float: right;
+			}
+	/*  Generic Page Header Navigation Ends Here  */
+
+
+	/*  Generic Slide Shows Start Here  */
+		#jazzSlides
+			{
+			position: relative;
+			display: block;
+			}
+
+		#jazzSlides img
+			{
+		 	position: absolute;
+			z-index: 1;
+			background-color: white;
+			line-height: 0;
+			width: 100%;
+			height: 100%;
+			left: 0;
+			top: 0;
+			}
+
+		#jazzSlideSmall
+			{
+			display: none;
+			line-height: 0;
+			}
+
+		#jazzSlideSmall img
+			{
+			display: block;
+			width: 100%;
+			}
+
+		#jazzSlides img.active
+			{
+			z-index: 3
+			}
+
+		#jazzSlides img.base
+			{
+			z-index: -1;
+			position: static;
+			display: block
+			}
+
+		#jazzStatic
+			{
+		  	position: relative;
+			display: block;
+			line-height: 0;
+			}
+
+		#jazzStatic img
+			{
+			background-color: white;
+			width: 100%;
+			left: 0;
+			top: 0;
+			display: block;
+			line-height: 0;
+			}
+	/*  Generic Slide Shows End Here  */
+
+
+	/*  Generic Page Main Menu Drop Down Navigation Starts Here  */
+		#dropDownContainer
+			{
+			display: none;
+		    background-color: #000000;
+		    height: 30px;
+			}
+
+		.menuDivider
+			{
+		    background: #4d8daf;
+		    width: 1px;
+		    height: 30px;
+		    margin-left: 15px;
+		    float: left;
+			}
+
+		#dropDown
+			{
+		    margin: 0px auto 0px auto;
+			background: #005c8d;
+			height: 30px;
+			line-height: 30px;
+			z-index: 1;
+			}
+
+		.homeIconDropDown a
+			{
+			color: #fdb813;
+		    width: 40px;
+		    float:left;
+		    text-align: center;
+		    padding-left: 15px;
+		    padding-top: 5px;
+		    text-decoration: none;
+			}
+
+		.homeIconDropDown a:hover
+			{
+			color: #ffffff;
+			text-decoration: none;
+			}
+
+		.hamburgerIcon, .closeIcon
+			{
+			background: none;
+			position: static;
+			top: 0px;
+			right: 0px;
+			padding: 0px 15px 0px 15px;
+			color: #ffffff;
+			border: 0px;
+			font-weight: 400;
+			cursor: pointer;
+			outline: none;
+			z-index: 1;
+			}
+
+		.hamburgerIcon
+			{
+			line-height: 25px;
+			font-size: 1.3em;
+			}
+
+		.closeIcon
+			{
+			line-height: 60px;
+			font-size: 2.5em;
+			}
+
+		.dropDownMenu
+			{
+			max-width: 1100px;
+		    margin: 0px auto  0px auto;
+			z-index: 2;
+			font-weight: 400;
+			font-size: 16px;
+			width: 100%;
+			background: #00507d;
+			position: static;
+			text-align: center;
+			text-transform: uppercase;
+			}
+
+		.dropDown a
+			{
+			color: #ffffff;
+			text-decoration: none;
+			padding-left: 15px;
+			}
+		 
+		.dropDownMenu li
+			{
+			display: block;
+			padding: 5px 0px 5px 0px;
+			border-top: solid 1px #4d8daf;
+			border-bottom: solid 1px #00507d;
+			z-index: 2;
+			}
+
+		.menusSubmenu
+			{
+			display: block;
+			background: #4d8daf;
+			z-index: 2;
+			}
+
+		.dropDownMenu li:hover
+			{
+			display: block;
+			background: #4d8daf;
+			padding: 5px 0px 5px 0px;
+			border-top: solid 1px #4d8daf;
+			border-bottom: solid 1px #00507d;
+			}
+
+		.dropDownMenu ul li a:hover
+			{
+			color: #005c8d;
+			text-decoration: none;
+			}
+
+		.dropDownMenu a, .dropDownMenu a:hover
+			{
+			text-decoration: none;
+			color: white;
+			}
+	/*  Generic Page Main Menu Drop Down Navigation Ends Here  */
+
+
+	/*  Generic Page Main Menu Static Navigation Starts Here  */
+		#mainMenuOuterContainer
+			{
+		    background-color: #000000;
+		    height: 30px;
+			}
+
+		#mainMenuInnerContainer
+			{
+		    max-width: 1100px;
+		    margin: 0 auto  0 auto;
+		   	background-color: #005c8d;
+		   	height: 30px;
+			}
+
+		#mainMenuButtons
+			{
+			width: 90%;
+		    display: flex;
+			justify-content: space-around;
+			flex-direction: row;
+			align-items: center;
+			flex-wrap: wrap;
+		   	height: 30px;
+			}
+
+		.homeIconStatic a
+			{
+			color: #fdb813;
+		    width: 5%;
+		    float:left;
+		    text-align: center;
+		    padding-left: 15px;
+		    padding-top: 5px;
+		    text-decoration: none;
+			}
+
+		.homeIconStatic a:hover
+			{
+			color: #ffffff;
+			text-decoration: none;
+			}
+
+		.mainMenuButton a
+			{
+		    color: #ffffff;
+		    text-decoration: none;
+			text-align: center;
+		    font-size: 16px;
+		    font-weight: 400;
+		    text-transform: uppercase;
+			}
+
+	 	.mainMenuButton a:hover
+			{
+		    color: #fdb813;
+			}
+
+	/*  Generic Page Main Menu Navigation Ends Here  */
+
+
+	/*  Generic Page Footer Starts Here  */
+		footer
+			{
+		    max-width: 1100px;
+		    margin: 0 auto  0 auto;
+		    padding: 15px;
+			}
+
+		#footerContactItems
+			{
+			margin: 0 auto 0 auto;
+			max-width: 1100px;
+			display: flex;
+			justify-content: space-between;
+			flex-direction: row;
+			align-items: center;
+			flex-wrap: wrap;
+			}
+
+		.footerHeading
+			{
+			padding-bottom: 7px;
+			color: #fdb813;
+		  	text-align: left;
+			font-size: 1.1em;
+			font-family: 'Lobster', sans-serif;
+			}
+
+		#footerOuterLeft, #footerInnerLeft,	#footerInnerRight
+			{
+			float: left;
+			width: 25%;
+			}
+
+		#footerOuterRight
+			{
+			float: right;
+			width: 25%;
+			}
+
+		#footerOuterLeft p
+			{
+			color: #005c8d;
+		  	text-align: left;
+			font-size: 0.7em;
+			}
+
+		#footerOuterLeft i
+			{
+			color: #fdb813;
+			}
+
+		.phoneIcon
+			{
+			margin-top: 9px;
+			margin-left: 2px;
+			margin-right: 6px;
+			}
+
+		.mobileIcon
+			{
+			margin-top: 7px;
+			margin-left: 4px;
+			margin-right: 8px;
+			}
+
+		.envelopeIcon
+			{
+			margin-top: 7px;
+			margin-right: 5px;
+			}
+
+		.webAddress
+			{
+			margin-top: 40px;
+			}
+
+		.webAddress a
+			{
+			text-decoration: none;
+			color: #005c8d;
+		  	text-align: left;
+			font-size: 1.1em;
+			font-family: 'Lobster', sans-serif;
+			}
+
+		#footerInnerRight th, #footerInnerRight td
+			{
+			color: #005c8d;
+		  	text-align: left;
+			font-size: 0.7em;
+			line-height: 1.4em;
+			}
+
+		#footerInnerRight th
+			{
+			padding-right: 20px;
+			font-weight: 700;
+			}
+
+		#footerOuterRight img
+			{
+		    padding-top: 15px;
+		    padding-bottom: 15px;
+			}
+
+		#copyrightBarContainer
+			{
+			clear: both;
+			background-color: #005c8d;
+			}
+
+		#copyrightBar
+			{
+		    max-width: 1100px;
+		    margin: 0 auto  0 auto;
+		    padding-left: 15px;
+		    padding-top: 5px;
+		    padding-bottom: 5px;
+			}
+
+		#copyrightBar p
+			{
+			color: #ffffff;
+		  	text-align: left;
+			font-size: 0.6em;
+			font-style: italic;
+			}
+	/*  Generic Page Footer Ends Here  */
+
+
+
+/*  H O M E  */
+	/*  Home Page 'Eat' 'Drink' 'Jazz' Links Panel Starts Here  */
+	 	#threeLinks
+			{
+			background-image: url(../images/retro-microphone-backdrop.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: 50% 50%;
+			}
+
+		#threeLinksPanelContainer
+			{
+			margin: 0 auto 0 auto;
+			max-width: 1100px;
+			display: flex;
+			padding-left: 15px;
+			padding-right: 15px;
+			justify-content: space-around;
+			flex-direction: row;
+			align-items: center;
+			flex-wrap: wrap;
+			}
+
+		.threeLinksPanel
+			{
+			width: 250px;
+			align-items: center;
+			padding-bottom: 30px;
+			}
+
+		.threeLinksPanel h2
+			{
+			padding-top: 20px;
+			padding-bottom: 20px;
+			color: #005c8d;
+		  	text-align: center;
+			font-size: 36px;
+			font-family: 'Lobster', sans-serif;
+			}
+
+		#eatCircle, #drinkCircle, #jazzCircle
+			{
+			border-radius: 50%;
+			height: 250px;
+			width: 250px;
+			overflow: hidden;
+			box-shadow: inset 3px 4px 3px 0px rgba(0, 0, 1, 0.6);
+			position: relative;
+			}
+
+		#eatCircle
+			{
+			background-image: url("../images/three-home-links/eat-home-link.jpg");
+			}
+
+		#drinkCircle
+			{
+			background-image: url("../images/three-home-links/drink-home-link.jpg");
+			}
+
+		#jazzCircle
+			{
+			background-image: url("../images/three-home-links/jazz-home-link.jpg");
+			}
+
+		.circleOverlay
+			{
+			border-radius: 50%;
+			background: transparent;
+			height: inherit;
+			width: inherit;
+			transition: all 2s ease;
+			position: absolute;
+			}
+
+		.circleOverlay a
+			{
+			text-decoration: none;
+			}
+
+		.circleOverlay h3, .circleOverlay p
+			{
+			color: #ffffff;
+		  	text-align: center;
+			text-decoration: none;
+			transform: scale(0);
+			opacity: 0;
+			transition: all 0.6s ease;
+			text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+			text-align: center;
+			}
+
+		.circleOverlay h3
+			{
+			transition: all 0.5s ease;
+			}
+
+		.circleOverlay p
+			{
+			transition: all 1.5s ease;
+			}
+
+		.circleOverlay:hover
+			{
+			background: rgba(0, 0, 0, 0.5);
+			}
+
+		.circleOverlay:hover h3, .circleOverlay:hover p
+			{
+			transform: scale(1);
+			opacity: 1;
+			}
+
+		.circleOverlay h3
+			{
+			margin-top: 80px;
+			font-size: 36px;
+			font-family: 'Lobster', sans-serif;
+			}
+
+		.circleOverlay p
+			{
+			margin-top: 10px;
+			font-size: 15px;
+			line-height: 22px;
+			padding: 10px;
+			}
+	/*  Home Page 'Eat' 'Drink' 'Jazz' Links Panel Ends Here  */
+
+
+	/*  Home Page 'About Us' Panel Starts Here  */
+		#aboutUs
+			{
+			background-image: url(../images/chocolate-cake-backdrop.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: 50% 50%;
+			padding: 15px;
+			}
+
+		#aboutUsContainer
+			{
+			margin: 0 auto 0 auto;
+			max-width: 1100px;
+			display: flex;
+			justify-content: space-between;
+			flex-direction: row;
+			align-items: center;
+			flex-wrap: wrap;
+			}
+
+		#aboutUsText h2
+			{
+			padding-top: 30px;
+			padding-bottom: 5px;
+			color: #fdb813;
+		  	text-align: left;
+			font-size: 36px;
+			font-family: 'Lobster', sans-serif;
+			text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+			}
+
+		#aboutUsText p
+			{
+			width: 40vw;
+			padding-top: 5px;
+			padding-bottom: 30px;
+			color: #ffffff;
+		  	text-align: left;
+			font-size: 13px;
+			line-height: 18px;
+			text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+			}
+
+		#jeanLeMorittePhoto
+			{
+			border-radius: 50%;
+			background-image: url(../images/jean-le-moritte.jpg);
+			border: solid #fdb813 3px;
+			height: 250px;
+			width: 250px;
+			overflow: hidden;
+			box-shadow: inset 2px 2px 2px 2px rgba(0, 0, 1, 0.6);
+			}
+
+		.headChef img
+			{
+			margin-top: 25px;
+			height: 250px;
+			width: 250px;
+	  		position: relative;
+	  		z-index: -2;
+	  		}
+
+		#jeanLeMoritteText
+			{
+			height: 70px;
+			width: 220px;
+			background-color: #fdb813;
+			border-radius: 5%;
+	  		position: relative;
+	  		left: 50%;
+	  		margin-left: -135px;
+	  		margin-top: -45px;
+			margin-bottom: 25px;
+			z-index: 1;
+	  		}
+
+		#aboutUsPhoto
+			{
+			width: 300px;
+	  		}
+
+		#jeanLeMoritteText h3
+			{
+			padding-top: 15px;
+			padding-bottom: 3px;
+			color: #005c8d;
+		  	text-align: center;
+			font-size: 30px;
+			font-family: 'Lobster', sans-serif;
+			}
+
+		#jeanLeMoritteText p
+			{
+			padding-top: 3px;
+			color: #000000;
+		  	text-align: center;
+			font-size: 16px;
+			font-weight: 700;
+			}
+	/*  Home Page 'About Us' Panel Ends Here  */
+
+
+
+/*  M E N U S  */
+	/*  Menus Page Five Menu Links Panel Starts Here  */
+		#fiveMenuLinks
+			{
+			background-image: url(../images/retro-microphone-backdrop.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: 50% 50%;
+			}
+
+		#fiveMenuLinksPanelContainer
+			{
+			margin: 0 auto 0 auto;
+			max-width: 1100px;
+			display: flex;
+			padding-left: 15px;
+			padding-right: 15px;
+			justify-content: space-around;
+			flex-direction: row;
+			align-items: center;
+			flex-wrap: wrap;
+			}
+
+		.fiveMenuLinksPanel
+			{
+			width: 120px;
+			align-items: center;
+			padding-top: 15px;
+			padding-bottom: 15px;
+			}
+
+		#aLaCarteCircle, #jazzNightSetCircle, #earlyBirdCircle, #lunchCircle, #drinksCircle
+			{
+			border-radius: 50%;
+			height: 120px;
+			width: 120px;
+			overflow: hidden;
+			box-shadow: inset 3px 4px 3px 0px rgba(0, 0, 1, 0.6);
+			position: relative;
+			}
+
+		#aLaCarteCircle
+			{
+			background-image: url("../images/five-menu-links/alacarte-menu-link.jpg");
+			}
+
+		#jazzNightSetCircle
+			{
+			background-image: url("../images/five-menu-links/jazz-night-menu-link.jpg");
+			}
+
+		#earlyBirdCircle
+			{
+			background-image: url("../images/five-menu-links/early-bird-menu-link.jpg");
+			}
+
+		#lunchCircle
+			{
+			background-image: url("../images/five-menu-links/lunch-menu-link.jpg");
+			}
+
+		#drinksCircle
+			{
+			background-image: url("../images/five-menu-links/drinks-menu-link.jpg");
+			}
+
+		.menuCircleOverlay
+			{
+			border-radius: 50%;
+			background: transparent;
+			height: inherit;
+			width: inherit;
+			transition: all 2s ease;
+			position: absolute;
+			}
+
+		.menuCircleOverlay a
+			{
+			text-decoration: none;
+			}
+
+		.menuCircleOverlay h3
+			{
+			margin-top: 36px;
+			font-size: 22px;
+			line-height: 25px;
+			font-family: 'Lobster', sans-serif;
+			color: #ffffff;
+		  	text-align: center;
+			text-decoration: none;
+			transform: scale(0);
+			opacity: 0;
+			transition: all 0.5s ease;
+			text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+			}
+
+		.menuCircleOverlay:hover
+			{
+			background: rgba(0, 0, 0, 0.5);
+			}
+
+		.menuCircleOverlay:hover h3
+			{
+			transform: scale(1);
+			opacity: 1;
+			}
+	/*  Menus Page Five Menu Links Panel Ends Here  */
+
+
+	/*  Menus Page 'Our Menus' Panel Starts Here  */
+		#ourMenus
+			{
+			background-image: url(../images/chef-adding-sauce-backdrop.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: 50% 50%;
+			padding: 15px;
+			}
+
+		#ourMenusContainer
+			{
+			margin: 0 auto 0 auto;
+			max-width: 1100px;
+			}
+
+		#ourMenusText p
+			{
+			padding-top: 80px;
+			padding-bottom: 80px;
+			color: #ffffff;
+		  	text-align: center;
+			font-size: 21px;
+			line-height: 32px;
+			text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+			}
+	/*  Menus Page 'Our Menus' Panel Starts Here  */
+
+
+	/*  Menus Page 'Menu Listings' Panel Starts Here  */
+		#MenusText
+			{
+			text-align: center;
+			}
+
+		.iconUp
+			{
+			margin-bottom: 12px;
+			font-size: 30px;
+			}
+
+		.iconUp a
+			{
+			color: #005c8d;
+		  	text-decoration: none;
+			}
+
+		.iconUp a:hover
+			{
+			font-size: 30px;
+			color: #ffffff;
+			}
+
+		.vegSelector, .celSelector, .allSelector
+			{
+			display: inline-block;
+			font-size: 16px;
+			line-height: 16px;
+			text-transform: uppercase;
+			}
+
+		.allSelector
+			{
+			margin-bottom: 30px;
+			}
+
+		.vegSelector a, .celSelector a, .allSelector a
+			{
+			color: #2e444e;
+			font-weight: 700;
+		  	text-decoration: none;
+			}
+
+		.vegSelector a:hover, .celSelector a:hover, .allSelector a:hover
+			{
+			color: #005c8d;
+			}
+
+		.menuTitleHeading
+			{
+			margin-top: 20px;
+			margin-bottom: 20px;
+			font-size: 50px;
+			line-height: 40px;
+			font-family: 'Lobster', sans-serif;
+			color: #005c8d;
+		  	text-align: center;
+			}
+
+		.menuTitleHeading span
+			{
+			font-size: 30px;
+			color: #2e444e;
+			}
+
+		.menuCourseHeading
+			{
+			font-size: 30px;
+			line-height: 30px;
+			color: #2e444e;
+		  	text-align: center;
+		  	text-transform: uppercase;
+			}
+
+		.menuDishName
+			{
+			margin-top: 15px;
+			margin-bottom: 5px;
+			font-size: 28px;
+			line-height: 28px;
+			color: #005c8d;
+		  	text-align: center;
+			font-family: 'Lobster', sans-serif;
+			}
+
+		.menuSideDishName
+			{
+			margin-top: 5px;
+			font-size: 22px;
+			line-height: 24px;
+			color: #005c8d;
+		  	text-align: center;
+			font-family: 'Lobster', sans-serif;
+			}
+
+		.menuDishName span, .menuSideDishName span
+			{
+			color: #2e444e;
+			padding-left: 8px;
+			font-size: 18px;
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 700;
+			}
+
+		.menuDishDescription
+			{
+			font-size: 14px;
+			line-height: 18px;
+			color: #000000;
+		  	text-align: center;
+			}
+
+		.menuDishDescription span
+			{
+			font-family: 'Lobster', sans-serif;
+			font-size: 16px;
+			color: #000000;
+			}
+
+		#jazzNightIntroText p
+			{
+			padding-top: 10px;
+			padding-bottom: 30px;
+			color: #000000;
+		  	text-align: center;
+			font-size: 16px;
+			line-height: 18px;
+			font-weight: 700;
+			}
+	/*  Menus Page 'Menu Listings' Panel Ends Here  */
+
+
+
+/*  W H A T ' S   O N'  */
+	/*  What's On Event Listing Starts Here  */
+		#whatsOn
+			{
+		    background-image: url(../images/retro-microphone-backdrop.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: 50% 50%;
+			}
+
+		#whatsOnContainer
+			{
+		    max-width: 1100px;
+		    margin: 0 auto  0 auto;
+		    padding: 15px;
+		    display: flex;
+		    justify-content: space-between;
+			flex-direction: row;
+			flex-wrap: wrap;
+			align-items: stretch;
+			}
+
+		.whatsOnItems
+			{
+			min-width: 240px;
+			background-color: #fecd5a;
+			max-width: 24%;
+			margin: 0 auto  10px auto;
+			text-align: center;
+			padding: 15px;
+			justify-content: space-between;
+			}
+
+		.performerPhoto1, .performerPhoto2, .performerPhoto3, .performerPhoto4, .performerPhoto5, .performerPhoto6, .performerPhoto7, .performerPhoto8
+			{
+			overflow: hidden;
+			margin: 0 auto  0 auto;
+			border-radius: 50%;
+			width: 200px;
+			height: 200px;
+			box-shadow: inset 2px 2px 2px 2px rgba(0, 0, 1, 0.6);
+			margin-bottom: 20px;
+			}
+
+		.performerPhoto1
+			{
+			background-image: url(../images/performers/grace-penrose.jpg);
+			}
+
+		.performerPhoto2
+			{
+			background-image: url(../images/performers/beata-hlavenkova.jpg);
+			}
+
+		.performerPhoto3
+			{
+			background-image: url(../images/performers/brian-deady.jpg);
+			}
+
+		.performerPhoto4
+			{
+			background-image: url(../images/performers/hot-club-of-cowtown.jpg);
+			}
+
+		.performerPhoto5
+			{
+			background-image: url(../images/performers/jason-marsalis-vibes.jpg);
+			}
+
+		.performerPhoto6
+			{
+			background-image: url(../images/performers/kurt-rosenwinkel.jpg);
+			}
+
+		.performerPhoto7
+			{
+			background-image: url(../images/performers/sheryl-bailey.jpg);
+			}
+
+		.performerPhoto8
+			{
+			background-image: url(../images/performers/sup-trio.jpg);
+			}
+
+		.performerCapName
+			{
+			color: #ffffff;
+		  	text-align: center;
+			font-size: 21px;
+			line-height: 22px;
+			font-family: 'Lobster', sans-serif;
+			margin-top: 115px;
+			text-shadow: 1px 1px 1px #000000;
+			}
+
+		.performerCapDate
+			{
+			color: #fdb813;
+		  	text-align: center;
+			font-size: 28px;
+			line-height: 40px;
+			font-family: 'Lobster', sans-serif;
+			text-shadow: 1px 1px 1px #000000;
+			}
+
+		.performerName
+			{
+			color: #005c8d;
+		  	text-align: center;
+			font-size: 36px;
+			line-height: 36px;
+			font-family: 'Lobster', sans-serif;
+			margin-bottom: 10px;
+			}
+
+		.performerDate
+			{
+			color: #2e444e;
+		  	text-align: center;
+			font-size: 16px;
+			text-transform: uppercase;
+			margin-bottom: 15px;
+			font-weight: 700;
+			}
+
+		.whatsOnItemsBio p
+			{
+			color: #000000;
+		  	text-align: left;
+			font-size: 13px;
+			line-height: 16px;
+			margin-top: 20px
+			}
+
+		.whatsOnItemsBio span
+			{
+			font-weight: 700;
+			}
+
+		.bookButton, .webButton
+			{
+			border: none;
+			width: 100%;
+			padding: 6px;
+			margin-bottom: 3px;
+			background-color: #005c8d;
+			color: white;
+			font-size: 14px;
+			text-transform: uppercase;
+			transition: .4s ease;
+			}
+		  
+		.bookButton:hover, .webButton:hover
+			{
+		    background-color: #2e444e;
+		    transition: .4s ease;
+			}
+	/*  What's On Event Listing Ends Here  */
+
+
+
+/*  S H O P  */
+	/*  Shop Starts Here  */
+		#shopArea
+			{
+		    background-image: url(../images/retro-microphone-backdrop.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: 50% 50%;
+			}
+
+		#shopGrid
+			{
+			max-width: 1100px;
+			margin: 0 auto 0 auto;
+			display: flex;
+			justify-content: space-between;
+			flex-direction: row;
+			flex-wrap: wrap;
+			align-items: stretch;
+			padding: 15px;
+			}
+
+		#cartContainer
+			{
+			float: right;
+			position: relative;
+			}
+
+		#itemCount
+			{
+			position: absolute;
+			display: none;
+			top: -10px;
+			left: 20px;
+			width: 20px;
+			height: 20px;
+			border-radius: 50%;
+			background: #fdb813;
+			color: #005c8d;
+			text-align: center;
+			font-weight: 700;
+			}
+
+		.productImage img
+			{
+			width: 100%;
+			}
+
+		.productPanel
+			{
+			width: 24%;
+			min-width: 220px;
+			float: left;
+			background-color: #fedc89;
+			padding: 10px;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			justify-content: space-between;
+			}
+
+		.productImage
+			{
+			margin-bottom: 15px;
+			}
+
+		.productText p
+			{
+			margin-bottom: 15px;
+			font-size: 14px;
+			}
+
+		.productText h2
+			{
+			line-height: 24px;
+			margin-bottom: 15px;
+			font-family: 'Lobster', sans-serif;
+			font-size: 28px;
+			color: #005c8d;
+			}
+
+		.priceContainer
+			{
+			margin-top: 10px;
+			font-weight: 700;
+			font-size: 18px;
+			color: #005c8d;
+			}
+
+			i:hover {
+			  cursor: pointer;
+			}
+
+		#shoppingCart
+			{
+			top: 0px;
+			left: 0px;
+			height: 100%;
+			width: 100%;
+			display: none;
+			position: absolute;
+			z-index: 9999;
+			background: rgba(0, 0, 0, 0.6);
+			}
+
+		#cartItemsContainer
+			{
+			position: relative;
+			width: 600px;
+			left: 50%;
+			top: 150px;
+			margin-left: -300px;
+			padding: 20px;
+			box-shadow: 0 0 10px black;
+			background: #fedc89;
+			overflow: auto;
+			}
+
+		#cartItemsContainer i
+			{
+			position: absolute;
+			top: 2px;
+			right: 5px;
+			color: #005c8d;
+			}
+
+		#cartItemsContainer .productDetails
+			{
+			overflow: auto;
+			width: 100%;
+			margin-bottom: 15px;
+			}
+
+		#cartItemsContainer .productImage
+			{
+			float: left;
+			width: 260px;
+			padding: 0 20px;
+			margin-top: 10px;
+			}
+
+		#cartItemsContainer .productText
+			{
+			float: right;
+			width: 270px;
+			padding: -15px 15px;
+			}
+
+		#cartItemsContainer .productText .priceContainer
+			{
+			margin-top: 0px;
+			}
+	/*  Shop Ends Here  */
+
+
+
+/*  B O O K I N G S  */
+	/*  Form Starts Here  */
+		 #bookingForm
+			{
+			background-image: url(../images/retro-microphone-backdrop.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: 50% 50%;
+			}
+
+		#bookingFormContainer
+			{
+			margin: 0 auto 0 auto;
+			max-width: 1100px;
+			padding-left: 15px;
+			padding-right: 15px;
+			}
+
+		.info-text
+			{
+			text-align: left;
+			width: 100%;
+			}
+
+		form
+			{
+			padding: 20px;
+			}
+
+
+		h2.heading
+			{
+			font-size: 22px;
+			font-weight: 300;
+			text-align: left;
+			color: #005c8d;
+			border-bottom: 1px solid #005c8d;
+			padding-bottom: 3px;
+			margin-bottom: 20px;
+			font-family: 'Lobster', sans-serif;
+			}
+
+		.form-group
+			{
+			margin-bottom: 10px;
+			}
+
+		.controls
+			{
+			text-align: left;
+			position: relative;
+			}
+
+		.controls input[type="text"],
+		.controls input[type="email"],
+		.controls input[type="number"],
+		.controls input[type="date"],
+		.controls input[type="tel"],
+		.controls input[type="datetime-local"],
+		.controls textarea,
+		.controls button,
+		.controls select
+			{
+			padding: 12px;
+			font-size: 14px;
+			border: 1px solid #005c8d;
+			width: 100%;
+			margin-bottom: 20px;
+			color: #888;
+		  	font-size: 16px;
+		  	font-weight: 300;
+			-moz-transition: all 0.3s;
+			-o-transition: all 0.3s;
+			-webkit-transition: all 0.3s;
+			transition: all 0.3s;
+			background-color: #ffe6ad;
+			}
+
+		.controls input[type="text"]:focus,
+		.controls input[type="text"]:hover,
+		.controls input[type="email"]:focus,
+		.controls input[type="email"]:hover,
+		.controls input[type="number"]:focus,
+		.controls input[type="number"]:hover,
+		.controls input[type="datetime-local"]:focus,
+		.controls input[type="datetime-local"]:hover,
+		.controls input[type="date"]:focus,
+		.controls input[type="date"]:hover,
+		.controls input[type="tel"]:focus,
+		.controls input[type="tel"]:hover,
+		.controls textarea:focus,
+		.controls textarea:hover,
+		.controls button:focus,
+		.controls button:hover,
+		.controls select:focus,
+		.controls select:hover
+			{
+			outline: none;
+			border-color: #9FB1C1;
+			}
+
+		.controls input[type="text"]:focus + label,
+		.controls input[type="text"]:hover + label,
+		.controls input[type="email"]:focus + label,
+		.controls input[type="email"]:hover + label,
+		.controls input[type="number"]:focus + label,
+		.controls input[type="number"]:hover + label,
+		.controls input[type="date"]:focus + label,
+		.controls input[type="date"]:hover + label,
+		.controls input[type="tel"]:focus + label,
+		.controls input[type="tel"]:hover + label,
+		.controls textarea:focus + label,
+		.controls textarea:hover + label,
+		.controls button:focus + label,
+		.controls button:hover + label,
+		.controls select:focus + label,
+		.controls select:hover + label
+			{
+			color: #005c8d;
+			cursor: text;
+			text-transform: uppercase;
+			}
+
+		.controls .fa-sort
+			{
+			position: absolute;
+			right: 10px;
+			top: 14px;
+			color: #005c8d;
+			}
+
+		.controls select
+			{
+			-moz-appearance: none;
+			-webkit-appearance: none;
+			cursor: pointer;
+			}
+
+		.controls label
+			{
+			position: absolute;
+			left: 4px;
+			top: 10px;
+			width: 90%;
+			color: #005c8d;
+			font-size: 16px;
+			display: inline-block;
+			padding: 4px 10px;
+			font-weight: 400;
+			text-transform: uppercase;
+			background-color: rgba(255, 255, 255, 0);
+			-moz-transition: color 0.3s, top 0.3s, background-color 0.8s;
+			-o-transition: color 0.3s, top 0.3s, background-color 0.8s;
+			-webkit-transition: color 0.3s, top 0.3s, background-color 0.8s;
+			transition: color 0.3s, top 0.3s, background-color 0.8s;
+			background-color: #ffe6ad;
+			}
+
+		.controls label.active
+			{
+			top: -11px;
+			color: #555555;
+			background-color: white;
+			width: auto;
+			}
+
+		.controls textarea
+			{
+			resize: none;
+			height: 200px;
+			}
+
+		button.col-1-4
+			{
+			cursor: pointer;
+			background-color: #1b3d4d;
+			border: none;
+			color: #ffffff;
+			padding: 12px 0px;
+			float: right;
+			font-size: 21px;
+			text-transform: uppercase;
+			}
+
+		button.col-1-4:hover
+			{
+			background-color: #ffe6ad;
+			}
+
+		.grid p
+			{
+			color: #005c8d;
+			font-size: 18px;
+			}
+
+		.clear:after
+			{
+			content: "";
+			display: table;
+			clear: both;
+			}
+
+		.grid:after
+			{
+			content: "";
+			display: table;
+			clear: both;
+			}
+
+		[class*='col-']
+			{
+			float: left;
+			padding-right: 10px;
+			}
+
+		.grid [class*='col-']:last-of-type
+			{
+			padding-right: 0;
+			}
+
+		.col-2-3
+			{
+			width: 66.66%;
+			}
+
+		.col-1-3
+			{
+			width: 33.33%;
+			}
+
+		.col-1-2
+			{
+			width: 50%;
+			}
+
+		.col-1-4
+			{
+			width: 25%;
+			}
+
+		@media (max-width: 760px) {
+			.col-1-4-sm, .col-1-3, .col-2-3
+				{
+				width: 100%;
+				}
+
+			[class*='col-']
+		  		{
+		    	padding-right: 0px;
+				}
+			}
+			.col-1-8
+				{
+				width: 12.5%;
+				}
+			}
+	/*  Form Ends Here  */
+
+
+
+/*  G A L L E R Y  */
+	/*  Lightbox Starts Here  */
+		.galleryLine
+			{
+			color: #005c8d;
+			}
